@@ -1,0 +1,33 @@
+
+<div class="taskdescription">
+  <div class="container">
+   
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+
+  <strong>Project name:</strong>
+  <h4><%= @management.project_name %></h4>
+
+
+
+  <strong>Project description:</strong>
+  <h4>  <%= @management.project_description %></h4>
+
+
+<%= link_to 'Edit', edit_management_path(@management) %> |
+<%= link_to 'Back', managements_path %>
+<br>
+<br>
+<div class="container">
+  <%= render @management.tasks %>
+  <br>
+  <%= render "tasks/form" %>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
